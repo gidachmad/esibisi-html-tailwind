@@ -1,8 +1,16 @@
 module.exports = {
-  content: ['./src/**/*.html'],
+  content: ['./src/**/*.{html,js}', 
+  // './node_modules/tw-elements/dist/js/**/*.js'
+  ],
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
+    extends:{
+      lineHeight: {
+        'extra-loose': '2.5',
+        'chill': '1.6',
+      }
+    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -359,17 +367,7 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
-      serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
-      mono: [
-        'ui-monospace',
-        'SFMono-Regular',
-        'Menlo',
-        'Monaco',
-        'Consolas',
-        '"Liberation Mono"',
-        '"Courier New"',
-        'monospace',
-      ],
+      serif: ['ui-serif', '"Poppins"', '"Nunito"',],
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
@@ -946,5 +944,6 @@ module.exports = {
     'active',
     'disabled',
   ],
+  // plugins: [require('tw-elements/dist/plugin')],
   plugins: [],
 }
