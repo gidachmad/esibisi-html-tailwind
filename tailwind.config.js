@@ -1,6 +1,6 @@
 module.exports = {
   content: ['./src/**/*.{html,js}', 
-  // './node_modules/tw-elements/dist/js/**/*.js'
+  './node_modules/tw-elements/dist/js/**/*.js'
   ],
   presets: [],
   darkMode: 'media', // or 'class'
@@ -944,6 +944,6 @@ module.exports = {
     'active',
     'disabled',
   ],
-  // plugins: [require('tw-elements/dist/plugin')],
+  plugins: [require('tw-elements/dist/plugin')],
   plugins: [],
 }
